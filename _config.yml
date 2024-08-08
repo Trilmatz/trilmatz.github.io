@@ -29,9 +29,12 @@ github_username:  Trilmatz
 # Build settings
 #remote_theme: pages-themes/minimal@v0.2.0
 theme: minima
+
+# Plugins
 plugins:
   - jekyll-feed
-#  - jekyll-remote-theme
+  - jekyll-remote-theme
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,6 +57,61 @@ plugins:
 #   - vendor/ruby/
 
 
+# Reading files
+include:
+  - .htaccess
+  - _pages
+#  - files
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Site Author
+author:
+  name             : "Ling Leander Grimm"
+  avatar           : #"profile.png"
+  bio              : "Physics MSc. Student at Karlsruhe Institute of Technology"
+  location         : "Germany"
+  employer         :
+  pubmed           : 
+  googlescholar    : 
+  email            : "Leander.Grimm@student.kit.edu"
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "Trilmatz"
+  google_plus      :
+  keybase          :
+  instagram        :
+  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  lastfm           :
+  linkedin         :
+  orcid            : "http://orcid.org/yourorcidurl"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            : #
+  tumblr           :
+  twitter          : 
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        : 
+
 # Defaults
 defaults:
   # _pages
@@ -63,20 +121,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-include:
-  - .htaccess
-  - _pages
-#  - files
-
-exclude:
-  - .sass-cache/
-   - .jekyll-cache/
-   - gemfiles/
-   - Gemfile
-   - Gemfile.lock
-   - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
